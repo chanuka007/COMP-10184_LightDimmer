@@ -32,7 +32,7 @@ void loop()
     //set analog num to the analog resistor value
 
   analogNum = analogRead(A0); 
-
+  //if toggle is on then set the light to the analog value of the ressistor
   if(toggle){
   //Serial.println(String(analogNum));
 analogWrite(D4, analogNum);
@@ -64,7 +64,7 @@ if(pressedIn && unPressed){
         toggle=true;
       }
 
-      //if toggle is on then set the light to the analog value of the ressistor
+    
 }
 //Serial.println(String(toggle));
 delay(1);
